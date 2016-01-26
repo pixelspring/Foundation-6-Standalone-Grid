@@ -1,0 +1,90 @@
+// CSS Reset:
+//      Box Sizing is the only absolute requirement here,
+//      and you are likely to be using something like
+//      normalize for the rest of your reset needs.
+// --------------------------------------------------------
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+// Variables:
+// --------------------------------------------------------
+
+@import 'foundation-grid/util/util';
+
+$global-width: rem-calc(1200);
+
+// Breakpoint definitions:
+$breakpoints: (
+    small: 0,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large);
+
+// The Grid:
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-responsive-gutter: (
+    small: 20px,
+    medium: 30px,
+);
+$grid-column-align-edge: true;
+$block-grid-max: 8;
+
+// Bring on the grid:
+@import 'foundation-grid/grid/grid';
+
+// Which Grid do you want to use? Import either the standard or the flex-grid:
+// @include foundation-grid;
+// OR:
+// @include foundation-flex-grid;
+@include foundation-grid;
+
+
+// Example Styling:
+// --------------------------------------------------------
+.row {
+    margin-bottom: 20px;
+}
+
+.column {
+    background: hotpink;
+    border: 1px solid black;
+}
+
+.columns {
+    background: bisque;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.columns:nth-child(2) {
+    background:lightblue;
+}
+
+.columns:nth-child(3) {
+    background:lightgreen;
+}
+
+.columns:nth-child(4) {
+    background:lightpink;
+}
+
+
