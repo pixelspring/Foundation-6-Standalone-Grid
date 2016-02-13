@@ -99,4 +99,9 @@ $block-grid-max: 8;
     background:lightpink;
 }
 
+// Debug With Pesticide:
+// --------------------------------------------------------
+$pesticide-debug-outline:   true;
+$pesticide-debug-depth:     false;
 
+@import "pesticide";
