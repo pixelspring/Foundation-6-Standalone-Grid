@@ -854,17 +854,20 @@ body {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-.row {
-  margin-bottom: 20px; }
-
 .column, .columns {
-  background: hotpink;
-  border: 1px solid black; }
+  background: hotpink; }
 
 .columns {
-  background: bisque;
-  padding: 20px;
-  border: 1px solid black; }
+  background: bisque; }
+
+.columns .columns {
+  background: red; }
+
+.columns .columns .columns {
+  background: green; }
+
+.columns .columns .columns .columns {
+  background: blue; }
 
 .columns:nth-child(2) {
   background: lightblue; }

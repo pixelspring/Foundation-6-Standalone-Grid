@@ -61,18 +61,30 @@ $block-grid-max: 8;
 // Example Styling:
 // --------------------------------------------------------
 .row {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .column {
     background: hotpink;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 .columns {
     background: bisque;
-    padding: 20px;
-    border: 1px solid black;
+    // padding: 20px;
+    // border: 1px solid black;
+}
+
+.columns .columns {
+    background: red;
+}
+
+.columns .columns .columns {
+    background: green;
+}
+
+.columns .columns .columns .columns {
+    background: blue;
 }
 
 .columns:nth-child(2) {
