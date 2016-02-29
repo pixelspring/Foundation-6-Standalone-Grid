@@ -24,7 +24,7 @@ body {
 // Variables:
 // --------------------------------------------------------
 
-@import 'foundation-grid/util/util';
+@import 'util/util';
 
 $global-width: rem-calc(1200);
 
@@ -41,7 +41,7 @@ $breakpoint-classes: (small medium large);
 // The Grid:
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-responsive-gutter: (
+$grid-column-gutter: (
     small: 20px,
     medium: 30px,
 );
@@ -49,7 +49,7 @@ $grid-column-align-edge: true;
 $block-grid-max: 8;
 
 // Bring on the grid:
-@import 'foundation-grid/grid/grid';
+@import 'grid/grid';
 
 // Which Grid do you want to use? Import either the standard or the flex-grid:
 // @include foundation-grid;

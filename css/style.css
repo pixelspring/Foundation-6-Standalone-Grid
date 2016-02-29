@@ -18,7 +18,9 @@ body {
   margin-right: auto; }
   .row::before, .row::after {
     content: ' ';
-    display: table; }
+    display: table;
+    flex-basis: 0;
+    order: 1; }
   .row::after {
     clear: both; }
   .row.collapse > .column, .row.collapse > .columns {
@@ -41,10 +43,10 @@ body {
       margin-right: auto; }
 
 .column, .columns {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
   width: 100%;
-  float: left; }
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
   @media screen and (min-width: 40em) {
     .column, .columns {
       padding-left: 0.9375rem;
