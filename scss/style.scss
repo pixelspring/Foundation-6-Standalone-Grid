@@ -101,7 +101,7 @@ $block-grid-max: 8;
 
 // Debug With Pesticide:
 // --------------------------------------------------------
-$pesticide-debug-outline:   true;
+$pesticide-debug-outline:   false;
 $pesticide-debug-depth:     false;
 
 @import "pesticide";
