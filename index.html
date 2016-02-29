@@ -13,11 +13,15 @@
     <h1>Foundation 6 Standalone Grid Test</h1>
 </div>
 
+<hr>
+
 <div class="row">
     <div class="small-12 medium-4 columns">Small-12 / Medium 4</div>
     <div class="small-12 medium-4 columns">Small-12 / Medium 4</div>
     <div class="small-12 medium-4 columns">Small-12 / Medium 4</div>
 </div>
+
+<hr>
 
 <div class="row">
     <div class="large-3 columns">Large 3</div>
@@ -26,6 +30,38 @@
     <div class="large-3 columns">Large 3</div>
 </div>
 
+<hr>
+
+<div class="row columns">
+    <h2>Nested Rows:</h2>
+</div>
+<div class="row display">
+
+    <div class="small-8 columns">8
+
+        <div class="row">
+            <div class="small-8 columns">8 Nested
+
+                <div class="row">
+                    <div class="small-8 columns">8 Nested Again</div>
+                    <div class="small-4 columns">4</div>
+                </div>
+
+            </div>
+
+            <div class="small-4 columns">4</div>
+        </div>
+
+    </div>
+
+    <div class="small-4 columns">4</div>
+
+</div>
+
+<hr>
+<div class="row columns">
+    <h2>Block Grid:</h2>
+</div>
 <div class="row small-up-1 medium-up-2 large-up-4">
     <div class="column">
         <p>Block Grid<br>small-up-1 medium-up-2 large-up-4</p>
@@ -51,6 +87,22 @@
     <div class="column">
         <p>Block Grid<br>small-up-1 medium-up-2 large-up-4</p>
     </div>
+</div>
+
+<hr>
+<div class="row columns">
+    <h2>Incomplete Rows:</h2>
+</div>
+<div class="row">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3 - Floats to right</div>
+</div>
+
+<div class="row">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns end">3 - with .end class</div>
 </div>
 
 </body>
