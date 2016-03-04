@@ -58,6 +58,10 @@ $block-grid-max: 8;
 @include foundation-grid;
 
 
+// Semantic Classes test:
+@import 'semantic';
+
+
 // Example Styling:
 // --------------------------------------------------------
 .row {
