@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: "Comic Sans MS", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -856,6 +856,11 @@ body {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+.row {
+  margin-bottom: 20px; }
+  .row .row {
+    margin-bottom: 0; }
+
 .column, .columns {
   background: hotpink; }
 

@@ -10,7 +10,7 @@
 }
 
 html {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -61,7 +61,9 @@ $block-grid-max: 8;
 // Example Styling:
 // --------------------------------------------------------
 .row {
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    .row {margin-bottom: 0;}
 }
 
 .column {
