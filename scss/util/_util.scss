@@ -6,9 +6,11 @@
 @import 'breakpoint';
 @import 'flex';
 
+// Debug Mixin:
+// Can pass color if wanted, defaults to blue.
 @mixin debug($bg: blue) {
     * {
-        background: rgba($bg, 0.1);
+        background: rgba($bg, 0.2);
     }
 }
 

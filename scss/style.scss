@@ -71,5 +71,5 @@ $block-grid-max: 8;
 
     .row {margin-bottom: 0;}
 
-    @include debug();
+    @include debug(darkred);
 }
