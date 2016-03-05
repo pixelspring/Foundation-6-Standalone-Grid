@@ -70,46 +70,6 @@ $block-grid-max: 8;
     margin-bottom: 20px;
 
     .row {margin-bottom: 0;}
+
+    @include debug();
 }
-
-.column {
-    background: hotpink;
-    // border: 1px solid black;
-}
-
-.columns {
-    background: bisque;
-    // padding: 20px;
-    // border: 1px solid black;
-}
-
-.columns .columns {
-    background: red;
-}
-
-.columns .columns .columns {
-    background: green;
-}
-
-.columns .columns .columns .columns {
-    background: blue;
-}
-
-.columns:nth-child(2) {
-    background:lightblue;
-}
-
-.columns:nth-child(3) {
-    background:lightgreen;
-}
-
-.columns:nth-child(4) {
-    background:lightpink;
-}
-
-// Debug With Pesticide:
-// --------------------------------------------------------
-$pesticide-debug-outline:   false;
-$pesticide-debug-depth:     false;
-
-@import "pesticide";

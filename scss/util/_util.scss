@@ -6,6 +6,12 @@
 @import 'breakpoint';
 @import 'flex';
 
+@mixin debug($bg: blue) {
+    * {
+        background: rgba($bg, 0.1);
+    }
+}
+
 
 // MOVED FROM MIXINS.SCSS -----------------------------------------------------------------------------------
 

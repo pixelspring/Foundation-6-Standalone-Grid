@@ -976,31 +976,5 @@ footer {
   margin-bottom: 20px; }
   .row .row {
     margin-bottom: 0; }
-
-.column, .columns {
-  background: hotpink; }
-
-.columns {
-  background: bisque; }
-
-.columns .columns {
-  background: red; }
-
-.columns .columns .columns {
-  background: green; }
-
-.columns .columns .columns .columns {
-  background: blue; }
-
-.columns:nth-child(2) {
-  background: lightblue; }
-
-.columns:nth-child(3) {
-  background: lightgreen; }
-
-.columns:nth-child(4) {
-  background: lightpink; }
-
-/*
-    pesticide v0.1.0 . @mrmrs . MIT
-*/
+  .row * {
+    background: rgba(0, 0, 255, 0.1); }
