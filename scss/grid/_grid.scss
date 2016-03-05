@@ -22,8 +22,8 @@ $grid-column-count: 12 !default;
 /// @type Map | Length
 /// @since 6.1.0
 $grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
+    small: 20px,
+    medium: 30px,
 ) !default;
 
 /// If `true`, the last column in a row will align to the opposite edge of the row.
@@ -41,16 +41,16 @@ $-zf-end-float: if($grid-column-align-edge, $global-right, $global-left);
 // Remove this in 6.3
 $grid-column-responsive-gutter: null !default;
 @if $grid-column-responsive-gutter {
-  // scss-lint:disable DebugStatement
-  @warn 'Rename $grid-column-responsive-gutter to $grid-column-gutter to remove this warning.';
-  $grid-column-gutter: $grid-column-responsive-gutter;
+    // scss-lint:disable DebugStatement
+    @warn 'Rename $grid-column-responsive-gutter to $grid-column-gutter to remove this warning.';
+    $grid-column-gutter: $grid-column-responsive-gutter;
 }
 
 // If a single value is passed as a gutter, convert it to a map so the code knows what to do with it
 @if type-of($grid-column-gutter) == 'number' {
-  $grid-column-gutter: (
-    small: $grid-column-gutter,
-  );
+    $grid-column-gutter: (
+        small: $grid-column-gutter,
+    );
 }
 
 @import 'row';
