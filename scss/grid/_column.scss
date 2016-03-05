@@ -96,7 +96,8 @@
 
   &,
   &:last-child {
-    float: none;
+    // float: none;
+    float: none!important; // HACKY BUGFIX FOR RIGHT FLOAT ISSUE - LINE:83
   }
 }
 

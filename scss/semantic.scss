@@ -3,3 +3,37 @@ header {
     @include grid-col-row;
     background: lightblue;
 }
+
+main {
+    @include grid-row;
+    background: lightgray;
+}
+
+    .mainsection-one {
+        @include grid-column(6);
+        background: beige;
+    }
+    .mainsection-two {
+        @include grid-column(6);
+        background: aliceblue;
+    }
+    .mainsection-gallery {
+        @include grid-column(1 of 5);
+        background: lightsalmon;
+        text-align: center;
+    }
+
+
+footer {
+    @include grid-row;
+}
+
+    .footer-copyright {
+        @include grid-column(4);
+        background: lightgreen;
+    }
+
+    .footer-blurb {
+        @include grid-column(8);
+        background: lightyellow;
+    }
