@@ -856,35 +856,164 @@ body {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+header {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: lightblue; }
+  header::before, header::after {
+    content: ' ';
+    display: table;
+    flex-basis: 0;
+    order: 1; }
+  header::after {
+    clear: both; }
+  @media screen and (min-width: 40em) {
+    header {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  header:last-child:not(:first-child) {
+    float: right; }
+  header, header:last-child {
+    float: none; }
+
+main {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: lightgray; }
+  main::before, main::after {
+    content: ' ';
+    display: table;
+    flex-basis: 0;
+    order: 1; }
+  main::after {
+    clear: both; }
+
+.mainsection-one {
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: beige; }
+  @media screen and (min-width: 40em) {
+    .mainsection-one {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .mainsection-one:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-one {
+      width: 50%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-one {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-one:last-child:not(:first-child) {
+        float: right; } }
+
+.mainsection-two {
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: aliceblue; }
+  @media screen and (min-width: 40em) {
+    .mainsection-two {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .mainsection-two:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-two {
+      width: 50%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-two {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-two:last-child:not(:first-child) {
+        float: right; } }
+
+.mainsection-gallery {
+  width: 50%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: lightsalmon;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .mainsection-gallery {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .mainsection-gallery:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-gallery {
+      width: 20%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-gallery {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-gallery:last-child:not(:first-child) {
+        float: right; } }
+
+footer {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto; }
+  footer::before, footer::after {
+    content: ' ';
+    display: table;
+    flex-basis: 0;
+    order: 1; }
+  footer::after {
+    clear: both; }
+
+.footer-copyright {
+  width: 33.3333333333%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: lightgreen; }
+  @media screen and (min-width: 40em) {
+    .footer-copyright {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .footer-copyright:last-child:not(:first-child) {
+    float: right; }
+
+.footer-blurb {
+  width: 66.6666666667%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background: lightyellow; }
+  @media screen and (min-width: 40em) {
+    .footer-blurb {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .footer-blurb:last-child:not(:first-child) {
+    float: right; }
+
 .row {
   margin-bottom: 20px; }
   .row .row {
     margin-bottom: 0; }
-
-.column, .columns {
-  background: hotpink; }
-
-.columns {
-  background: bisque; }
-
-.columns .columns {
-  background: red; }
-
-.columns .columns .columns {
-  background: green; }
-
-.columns .columns .columns .columns {
-  background: blue; }
-
-.columns:nth-child(2) {
-  background: lightblue; }
-
-.columns:nth-child(3) {
-  background: lightgreen; }
-
-.columns:nth-child(4) {
-  background: lightpink; }
-
-/*
-    pesticide v0.1.0 . @mrmrs . MIT
-*/
+  .row * {
+    background: rgba(139, 0, 0, 0.2); }

@@ -26,6 +26,8 @@ body {
 
 @import 'util/util';
 
+$global-font-size: 100%;
+
 $global-width: rem-calc(1200);
 
 // Breakpoint definitions:
@@ -36,26 +38,40 @@ $breakpoints: (
     xlarge: 1200px,
     xxlarge: 1440px,
 );
+
+// Classes to output for prototyping grid
 $breakpoint-classes: (small medium large);
 
-// The Grid:
+// The maximum width of a row
 $grid-row-width: $global-width;
+
+// Default column count of the grid
 $grid-column-count: 12;
+
+// The amount of space between columns at different screen sizes. To use just one size, set the variable to a number instead of a map.
 $grid-column-gutter: (
     small: 20px,
     medium: 30px,
 );
+
+// If true, the last column in a row will align to the opposite edge of the row
 $grid-column-align-edge: true;
+
+// The highest number of .x-up classes available when using the block grid CSS
 $block-grid-max: 8;
 
 // Bring on the grid:
 @import 'grid/grid';
 
-// Which Grid do you want to use? Import either the standard or the flex-grid:
+// Generate either the standard or the flex-grid classes for prototyping:
 // @include foundation-grid;
 // OR:
 // @include foundation-flex-grid;
 @include foundation-grid;
+
+
+// Semantic Classes test:
+@import 'semantic';
 
 
 // Example Styling:
@@ -64,46 +80,6 @@ $block-grid-max: 8;
     margin-bottom: 20px;
 
     .row {margin-bottom: 0;}
+
+    @include debug(darkred);
 }
-
-.column {
-    background: hotpink;
-    // border: 1px solid black;
-}
-
-.columns {
-    background: bisque;
-    // padding: 20px;
-    // border: 1px solid black;
-}
-
-.columns .columns {
-    background: red;
-}
-
-.columns .columns .columns {
-    background: green;
-}
-
-.columns .columns .columns .columns {
-    background: blue;
-}
-
-.columns:nth-child(2) {
-    background:lightblue;
-}
-
-.columns:nth-child(3) {
-    background:lightgreen;
-}
-
-.columns:nth-child(4) {
-    background:lightpink;
-}
-
-// Debug With Pesticide:
-// --------------------------------------------------------
-$pesticide-debug-outline:   false;
-$pesticide-debug-depth:     false;
-
-@import "pesticide";
