@@ -10,17 +10,29 @@ main {
 }
 
     .mainsection-one {
-        @include grid-column(6);
+        @include grid-column(12);
         background: beige;
+
+            @include breakpoint(medium) {
+                @include grid-column(6);
+            }
     }
     .mainsection-two {
-        @include grid-column(6);
+        @include grid-column(12);
         background: aliceblue;
+
+            @include breakpoint(medium) {
+                @include grid-column(6);
+            }
     }
     .mainsection-gallery {
-        @include grid-column(1 of 5);
+        @include grid-column(1 of 2);
         background: lightsalmon;
         text-align: center;
+
+            @include breakpoint(medium) {
+                @include grid-column(1 of 5);
+            }
     }
 
 

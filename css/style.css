@@ -895,7 +895,7 @@ main {
     clear: both; }
 
 .mainsection-one {
-  width: 50%;
+  width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -906,9 +906,22 @@ main {
       padding-right: 0.9375rem; } }
   .mainsection-one:last-child:not(:first-child) {
     float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-one {
+      width: 50%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-one {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-one:last-child:not(:first-child) {
+        float: right; } }
 
 .mainsection-two {
-  width: 50%;
+  width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -919,9 +932,22 @@ main {
       padding-right: 0.9375rem; } }
   .mainsection-two:last-child:not(:first-child) {
     float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-two {
+      width: 50%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-two {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-two:last-child:not(:first-child) {
+        float: right; } }
 
 .mainsection-gallery {
-  width: 20%;
+  width: 50%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -933,6 +959,19 @@ main {
       padding-right: 0.9375rem; } }
   .mainsection-gallery:last-child:not(:first-child) {
     float: right; }
+  @media screen and (min-width: 40em) {
+    .mainsection-gallery {
+      width: 20%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 40em) and (min-width: 40em) {
+    .mainsection-gallery {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 40em) {
+      .mainsection-gallery:last-child:not(:first-child) {
+        float: right; } }
 
 footer {
   max-width: 75rem;
