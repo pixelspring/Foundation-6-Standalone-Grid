@@ -1,6 +1,7 @@
 # Foundation 6 Standalone Grid
 
 A standalone version of the grid from Foundation for sites 6.2
+[Test Page](http://pixelspring.github.io/Foundation-6-Standalone-Grid/)
 
 ## Usage
 Use it as you would use the Sass grid in the full version of Foundation. See the foundation [grid docs](http://foundation.zurb.com/sites/docs/grid.html) for full usage details. Both the regular and flexbox versions are available.
